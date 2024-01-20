@@ -1,6 +1,6 @@
 //Localhost
 ### Get all users
-GET http://localhost:3000/users
+GET http://localhost:3000/contacts
 
 ### Get user by id
-GET http://localhost:3000/users/6595ecfaf10f019b416cbc6e
+GET http://localhost:3000/contacts/65a4ff1eb1f323ce66385b49
