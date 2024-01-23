@@ -4,3 +4,67 @@ GET http://localhost:3000/contacts
 
 ### Get user by id
 GET http://localhost:3000/contacts/65a4ff1eb1f323ce66385b49
+
+### create contact
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Tapiwar",
+    "lastName": "sithole",
+    "email": "dbra@education.co.za",
+    "favoriteColor": "Yellow",
+    "birthday": "Feb 19 2002"
+}
+
+### put contacts
+POST http://localhost:3000/contacts/65a4ff9db1f323ce66385b4a HTTP/1.1
+
+content-type: application/json
+{
+    "firstName": "Jasper",
+    "lastName": "Kinm",
+    "email": "kim@education.co.za",
+    "favoriteColor": "Yellow",
+    "birthday": "Sep 12 2003"
+}
+
+### delete contact
+DELETE http://localhost:3000/contacts/6220b775099269ff7b31ceab HTTP/1.1
+
+// PRODUCTION Deploy
+### Get all contacts
+GET https://cse341-instructor.herokuapp.com/contacts
+
+
+### Get contact by id
+GET https://cse341-instructor.herokuapp.com/contacts/65a4fdceb1f323ce66385b48
+
+
+
+### Create contact
+POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Tapiwar",
+    "lastName": "sithole",
+    "email": "dbra@education.co.za",
+    "favoriteColor": "Yellow",
+    "birthday": "Feb 19 2002"
+}
+
+### PUT contact
+PUT https://cse341-instructor.herokuapp.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jasper",
+    "lastName": "Kinm",
+    "email": "kim@education.co.za",
+    "favoriteColor": "Yellow",
+    "birthday": "Sep 12 2003"
+}
+
+DELETE https://cse341-instructor.herokuapp.com/contacts/65a4ff1eb1f323ce66385b49 HTTP/1.1
