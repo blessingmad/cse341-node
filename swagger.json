@@ -5,9 +5,10 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "https://projects-mtt1.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
